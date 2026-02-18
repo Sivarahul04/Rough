@@ -1,0 +1,92 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.section, .semester, .subject {
+  padding: 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1c5980;
+}
+
+.subject {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subject input[type="text"],
+.subject input[type="number"],
+.subject select {
+  flex: 1;
+  min-width: 120px;
+}
+
+#resultSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-left: 5px solid #2ecc71;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  color: #2d3436;
+}
+
+#resultSection h3 {
+  margin-top: 10px;
+  color: #27ae60;
+}
